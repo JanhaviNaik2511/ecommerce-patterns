@@ -1,3 +1,4 @@
+
 from abc import ABC, abstractmethod
 
 
@@ -12,7 +13,8 @@ class FlatDiscount(PricingStrategy):
         self.amount = amount
 
     def calculate(self, cart):
-        return cart.get_subtotal()
+        total = cart.get_subtotal()
+        return max(0, total - self.amount)
 
 
 class PercentageDiscount(PricingStrategy):
@@ -20,9 +22,18 @@ class PercentageDiscount(PricingStrategy):
         self.percent = percent
 
     def calculate(self, cart):
-        return cart.get_subtotal()
+        total = cart.get_subtotal()
+        discount = total * (self.percent / 100)
+        return total - discount
 
 
 class BuyOneGetOne(PricingStrategy):
     def calculate(self, cart):
-        return cart.get_subtotal()
+        total = 0
+
+        # One free item for every two units of the same product.
+        for item in cart.items:
+            paid_quantity = item.quantity - (item.quantity // 2)
+            total += item.product.price * paid_quantity
+
+        return total
