@@ -1,5 +1,14 @@
 # E-Commerce Design Patterns
 
+Course and Code : CSD 6401 Software Engineering for Data Driven Applications.
+
+Group Member SEAT No:
+
+Disha Naik 25P0630003
+Janhavi Naik 25P0630004
+Karuna Gauns 25P0630005
+Saini Haldankar 25P0630012
+
 A working in-memory E-Commerce backend in Python (FastAPI) where one checkout call passes through seven design patterns. A console demo (`main.py`) and a REST API (`app.py`) show the full flow.
 
 **Live URL:** https://ecommerce-patterns.onrender.com/docs
