@@ -11,7 +11,7 @@ class OrderItem:
 
 
 class _PlaceholderState:
-    """Temporary state. Delete it once Saini's real states (state/order_state.py) are merged."""
+    """Temporary state. Delete it once  real states (state/order_state.py) are merged."""
 
     def next(self, order):
         print("Placeholder state: next() not implemented yet")

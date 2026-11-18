@@ -221,6 +221,10 @@ Example checkout request:
 }
 ```
 
+## UML diagram
+
+![UML diagram](docs/uml.png)
+
 ## Team
 
 | Member | Module |
