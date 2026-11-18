@@ -1,6 +1,6 @@
 # E-Commerce Design Patterns
 
-Course and Code : CSD 6401 Software Engineering for Data Driven Applications.
+Course and Code : CSD-6401 Software Engineering for Data Driven Applications.
 
 Group Member SEAT No:
 
